@@ -2,26 +2,46 @@
   "messages": [
     {
       "role": "user",
-      "content": "how is the weather?",
-      "id": "9b6e5ffd-56da-4042-a503-d292cd79d093",
-      "createdAt": "2024-11-05T19:34:16.767Z"
+      "content": "what is the weather?",
+      "id": "71c3cebb-f4ec-4743-89c8-fce69fbbb626",
+      "createdAt": "2024-12-31T16:08:16.912Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Could you please specify the location for which you would like to know the weather?",
+      "refusal": null,
+      "id": "94b2398c-51f8-4559-bca1-7c8622f57564",
+      "createdAt": "2024-12-31T16:08:19.551Z"
+    },
+    {
+      "role": "user",
+      "content": "Kosice, Slovakia",
+      "id": "b1c3b4f4-976a-41c6-ad7d-bdca803049bd",
+      "createdAt": "2024-12-31T16:08:31.123Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_Pd2L6OWnviQmRf7RicWtvE6Y",
+          "id": "call_FKo6eyN4WPLQBJPAF4vGymIO",
           "type": "function",
           "function": {
-            "name": "get_stuff",
-            "arguments": "{\"reasoning\":\"To provide accurate weather information.\"}"
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"User requested the current weather for Kosice, Slovakia.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "7c3e8fdd-f7f8-4103-9ac4-a361671aca41",
-      "createdAt": "2024-11-05T19:34:17.996Z"
+      "id": "d12dff74-dabc-4174-92b9-ef098e2c5a5e",
+      "createdAt": "2024-12-31T16:08:33.959Z"
+    },
+    {
+      "role": "tool",
+      "content": "hot, 90 deg",
+      "tool_call_id": "call_FKo6eyN4WPLQBJPAF4vGymIO",
+      "id": "b5c6f064-a377-4029-98f0-41f7f78621a5",
+      "createdAt": "2024-12-31T16:08:33.964Z"
     }
   ]
 }
